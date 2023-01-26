@@ -7,5 +7,6 @@ public class Client
     public string LastName { get; set; }
     public string PhoneNumber { get; set; }
     public double Budget { get; set; }
+    public List<Payment> Payments { get; set; }
     public List<Car>? Cars { get; set; }
 }

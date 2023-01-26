@@ -19,9 +19,8 @@ public class CarController : Controller
         _context = context;
     }
 
-    [HttpGet("GetClients")]
+    [HttpGet("GetCars")]
     [ProducesResponseType(typeof(IEnumerable<CarDto>), 200)]
-    [ProducesResponseType(typeof(List<Task>), 200)]
     public async Task<IActionResult> GetAllCars()
     {
         return Ok(await _service.GetAllCars());

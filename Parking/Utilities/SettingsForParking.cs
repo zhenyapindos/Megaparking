@@ -8,6 +8,8 @@ public static class SettingsForParking
     public const double PassengerRate = 3;
 
     public const double TruckRate = 5;
+
+    public const int Capacity = 15;
     //рейты + кол-во мест
     public static double GetRate(this Car car) => car.CarType switch
     {
